@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --dark: #000;
+  --light: #fff;
+  --primary: #225e25;
+  --secondary: #503175;
+  --tertiary: #d21d23;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background: linear-gradient(
+    107.56deg,
+    rgba(67, 181, 73, 0.33) 0%,
+    rgba(80, 49, 117, 0.33) 48.96%,
+    rgba(210, 29, 35, 0.33) 100%
+  );
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* NAV */
+
+.navbar {
+  background: transparent;
   display: flex;
-  flex-direction: column;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 0.5rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.hamburger {
+  margin: 1rem;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hamburger:hover div {
+  transition: 250ms all ease-out;
+  background-color: var(--tertiary);
+}
+
+.hamburger div {
+  width: 35px;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+  margin: 0.5rem;
+}
+
+.logo-picture {
+  height: 60px;
+}
+
+.logo-title {
+  margin: 1rem 0 0 2rem;
+}
+
+.nav-catchymotto {
+  margin-right: 3rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-catchymotto span {
+  margin: 2px;
+}
+
+.train {
+  color: var(--primary);
+}
+
+.play {
+  color: var(--secondary);
+}
+
+.lounge {
+  color: var(--tertiary);
+}
+
+/* HEADER */
+
+.header-container {
+  width: 100%;
+}
+
+.promo-video {
+  width: 100%;
+  object-fit: contain;
+  opacity: 0.5;
+  position: fixed;
 }
