@@ -38,6 +38,7 @@ body {
 .hamburger {
   margin: 1rem;
   cursor: pointer;
+  z-index: 20;
 }
 
 .hamburger:hover div {
@@ -58,7 +59,7 @@ body {
 }
 
 .logo-title {
-  margin: 1rem 0 0 2rem;
+  margin: 0.5rem 0 0 2rem;
 }
 
 .nav-catchymotto {
@@ -73,15 +74,15 @@ body {
 }
 
 .train {
-  color: var(--primary);
+  color: var(--tertiary);
 }
 
 .play {
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 .lounge {
-  color: var(--tertiary);
+  color: var(--secondary);
 }
 
 /* HEADER */
