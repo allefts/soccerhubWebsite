@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledClickedNav = styled.div`
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-120%)")};
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -16,34 +16,41 @@ export const StyledClickedNav = styled.div`
   transition: transform 0.3s ease-in-out;
   list-style: none;
   justify-content: space-evenly;
-  transition: transform 0.3s ease-in-out;
-  background: rgba(255, 255, 255, 0.6);
+  transition: transform 0.4s ease-in-out;
+  background: rgba(255, 255, 255, 0.75);
   z-index: 2;
 
-  li {
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+
+  .hamburger-links,
+  .hambuger-links:visited {
+    color: black;
     text-align: center;
     font-family: "Oswald", sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     cursor: pointer;
     text-transform: uppercase;
     transition: all 100ms ease-in;
+    text-decoration: none;
   }
 
-  li:first-child {
+  .hamburger-links:first-child {
     margin-top: 1rem;
   }
 
-  li:hover {
-    color: #503175;
+  .hamburger-links:hover {
+    color: #d21d23;
   }
 
-  li:last-child {
+  .hamburger-links:last-child {
     font-size: 3rem;
     color: red;
   }
 
-  li:last-child:hover {
+  .hamburger-links:last-child:hover {
     color: #503175;
   }
 `;

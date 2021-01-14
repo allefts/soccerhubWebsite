@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --dark: #000;
   --light: #fff;
@@ -16,9 +20,14 @@ body {
   background: linear-gradient(
     107.56deg,
     rgba(67, 181, 73, 0.33) 0%,
-    rgba(80, 49, 117, 0.33) 48.96%,
-    rgba(210, 29, 35, 0.33) 100%
+    rgba(80, 49, 117, 0.5) 48.96%,
+    rgba(210, 29, 35, 0.5) 100%
   );
+}
+
+.home-style {
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background: #fff;
 }
 
 /* NAV */
@@ -35,23 +44,9 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.hamburger {
-  margin: 1rem;
-  cursor: pointer;
-  z-index: 20;
-}
-
-.hamburger:hover div {
-  transition: 250ms all ease-out;
-  background-color: var(--tertiary);
-}
-
-.hamburger div {
-  width: 35px;
-  height: 4px;
-  background-color: black;
-  border-radius: 2px;
-  margin: 0.5rem;
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
 .logo-picture {
@@ -93,7 +88,141 @@ body {
 
 .promo-video {
   width: 100%;
-  object-fit: contain;
+  height: 90vh;
+  object-fit: cover;
   opacity: 0.5;
-  position: fixed;
+  border-bottom: 2px solid black;
+}
+
+/* PROMO */
+
+.promo-container {
+  width: 100%;
+  text-align: center;
+  font-family: Oswald, sans-serif;
+  padding: 2rem;
+}
+
+.promo-covid-title {
+  color: var(--secondary);
+  font-size: 45px;
+  margin: 0 0 1rem 0;
+}
+
+.promo-covid-description {
+  font-family: "Open Sans", sans-serif;
+  line-height: 25pt;
+  margin: 0 0 1rem 0;
+}
+
+.thank-you {
+  color: red;
+}
+
+/* ABOUT PROMO */
+
+.about-promo-top {
+  border-top: 2px solid grey;
+  padding: 1rem;
+  /* background: rgba(207, 207, 207, 0.5); */
+  background: linear-gradient(
+    107.56deg,
+    rgba(67, 181, 73, 0.33) 0%,
+    rgba(210, 29, 35, 0.5) 100%,
+    rgba(80, 49, 117, 0.5) 48.96%
+  );
+}
+
+.left-content {
+  position: relative;
+  display: inline-block;
+  width: 47%;
+  margin: 1rem;
+}
+
+.shBall-image {
+  background-image: url("./images/shBall.jpg");
+}
+
+.hover-overlay-ball-image,
+.hover-overlay-bar-image {
+  border-top: 4px solid var(--tertiary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.hover-overlay-ball-image > *,
+.hover-overlay-bar-image > * {
+  transform: translateY(20px);
+  transition: transform 0.8s;
+}
+
+.hover-overlay-ball-image:hover > *,
+.hover-overlay-bar-image:hover > * {
+  transform: translateY(0);
+}
+
+.hover-overlay-ball-image:hover,
+.hover-overlay-bar-image:hover {
+  opacity: 1;
+}
+
+.hover-overlay-ball-image,
+.hover-overlay-bar-image {
+  font-size: 1.25em;
+  padding: 1rem;
+}
+.shBall-image,
+.shBar-image {
+  min-height: 500px;
+  background-size: cover;
+}
+
+.right-content {
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+  width: 47%;
+}
+
+.shBar-image {
+  background-image: url("./images/sh-bar.jpg");
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .logo-picture {
+    height: 50px;
+  }
+
+  .nav-catchymotto span {
+    display: none;
+  }
+
+  .promo-container {
+    padding: 1rem;
+  }
+
+  .promo-covid-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 459px) {
+  .logo-picture {
+    display: none;
+  }
 }

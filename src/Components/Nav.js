@@ -1,6 +1,12 @@
 import React, { useState } from "react";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../App.css";
+
+//COMPONENTS
 import ClickedNav from "../Components/ClickedNav";
+import { Hamburger } from "./StyledHamburger";
+
+//PICTURES
 import soccerhubTitle from "../images/soccerhubTitle.png";
 import soccerhubLogo from "../images/justball.png";
 
@@ -14,14 +20,19 @@ const Nav = () => {
   return (
     <div>
       <div className="navbar">
-        <div onClick={() => handleHamburgerClick()} className="hamburger">
+        <Hamburger
+          open={open}
+          setOpen={setOpen}
+          onClick={() => handleHamburgerClick()}
+        >
+          {/* <Hamburger></Hamburger> is just another name for a styled div using styled components */}
           <div></div>
           <div></div>
           <div></div>
-        </div>
-        <div>
-          <img className="logo-picture" src={soccerhubLogo} alt="logo2" />
+        </Hamburger>
+        <div className="logo-container">
           <a className="navbar-brand" href="/">
+            <img className="logo-picture" src={soccerhubLogo} alt="logo2" />
             <img src={soccerhubTitle} alt="logo" className="logo-title" />
           </a>
         </div>
