@@ -124,13 +124,15 @@ body {
 .about-promo-top {
   border-top: 2px solid grey;
   padding: 1rem;
+  background-image: url(./images/backgroundhope.png);
+  background-size: cover;
   /* background: rgba(207, 207, 207, 0.5); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     107.56deg,
     rgba(67, 181, 73, 0.33) 0%,
-    rgba(210, 29, 35, 0.5) 100%,
-    rgba(80, 49, 117, 0.5) 48.96%
-  );
+    rgba(80, 49, 117, 0.5) 48.96%,
+    rgba(210, 29, 35, 0.5) 100%
+  ); */
 }
 
 .left-content {
@@ -195,6 +197,20 @@ body {
   display: inline-block;
   margin: 1rem;
   width: 47%;
+}
+
+.bar-title,
+.ball-title {
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  text-align: center;
+  font-weight: 1200;
+  font-size: 2rem;
+  color: var(--light);
+  position: absolute;
+  bottom: -3%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .shBar-image {

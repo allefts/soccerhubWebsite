@@ -10,7 +10,9 @@ const AboutPromo = () => {
       <StyledAboutPromo>
         <div className="left-content">
           <div className="shBall-image"></div>
-          <div className="ball-title"></div>
+          <div className="ball-title">
+            <h1>FUTSAL FIELD</h1>
+          </div>
           <div className="hover-overlay-ball-image">
             <p>
               After researching the worlds top academies, we are convinced that
@@ -23,7 +25,9 @@ const AboutPromo = () => {
         </div>
         <div className="right-content">
           <div className="shBar-image"></div>
-          <div className="bar-title"></div>
+          <div className="bar-title">
+            <h1>RAISING THE BAR</h1>
+          </div>
           <div className="hover-overlay-bar-image">
             <p>
               With a custom-built 15 foot bar, Soccer Hub isn't just about
