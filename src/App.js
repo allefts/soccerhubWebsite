@@ -20,10 +20,13 @@ function App() {
           <div className="home-style">
             <Header></Header>
             <HomePromo></HomePromo>
+            <div className="bacgrko">
+
             <AboutPromo></AboutPromo>
             <Spacer></Spacer>
+            </div>
             <LeaguePromo></LeaguePromo>
-            <SignUp></SignUp>
+            {/* <SignUp></SignUp> */}
           </div>
         </Route>
         <Footer></Footer>

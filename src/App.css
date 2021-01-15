@@ -39,7 +39,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 80px;
-  background: #cfcfcf;
+  background: #F2F2F2;
 }
 
 /* NAV */
@@ -136,13 +136,23 @@ body {
 
 /* ABOUT PROMO */
 
+
+.bacgrko{
+background: linear-gradient(
+    107.56deg,
+    rgba(67, 181, 73, 0.33) -40%,
+    rgba(80, 49, 117, 0.33) 70.96%,
+    rgba(210, 29, 35, 0.33) 20%
+  );
+}
+
 .about-promo-top {
   border-top: 2px solid grey;
-  padding: 1rem 1rem 0 1rem;
-  background: #cfcfcf;
+  /* padding: 1rem 1rem 0 1rem; */
+  /* background: #cfcfcf; */
   /* background-image: url(./images/backgroundhope.png); */
   background-size: cover;
-  /* background: rgba(207, 207, 207, 0.5); */
+  /* background: rgba(207, 207, 207, 0.7); */
   /* background: linear-gradient(
     107.56deg,
     rgba(67, 181, 73, 0.33) 0%,
@@ -296,7 +306,7 @@ body {
 }
 
 .signup-form input {
-  width: 20%;
+  width: 60%;
   padding: 10px 20px;
   border: 2px solid var(--primary);
   border-radius: 4px;
@@ -305,7 +315,8 @@ body {
 }
 
 .signup-container h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: black;
   font-family: "Bebas Neue", cursive;
 }
 

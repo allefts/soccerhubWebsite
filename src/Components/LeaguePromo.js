@@ -1,6 +1,7 @@
 /* eslint-disable react/style-prop-object */
 import React from "react";
 import "../App.css";
+import SignUp from "./SignUp";
 
 const LeaguePromo = () => {
   return (
@@ -18,6 +19,7 @@ const LeaguePromo = () => {
             Become a Member!
           </button>
         </div>
+        <SignUp></SignUp>
       </div>
     </div>
   );

@@ -8,7 +8,9 @@ const StyledSpacer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #cfcfcf;
+  // background: rgba(207, 207, 207, 0.7);
+
+  // background: #cfcfcf;
   padding-bottom: 1rem;
   img {
     transform: rotate(90deg);
