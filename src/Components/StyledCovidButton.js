@@ -26,8 +26,8 @@ export const StyledCovidList = styled.ul`
   font-family: "PT Serif", serif;
   margin-bottom: 15px;
   li {
-    color: #d21d23;
-    font-weight: 550;
+    color: #225e25;
+    font-weight: 600;
   }
 
   .precaution-list {
