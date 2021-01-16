@@ -17,7 +17,7 @@ body {
     rgba(210, 29, 35, 0.5) 100%
   );
   min-height: 100%;
-  padding-bottom: 80px;
+  padding-bottom: 300px;
   position: relative;
 }
 
@@ -34,18 +34,11 @@ body {
   min-height: 100vh;
 }
 
-.footer-container {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
-  background: #F2F2F2;
-}
-
 /* NAV */
 
 .navbar {
-  background: transparent;
+  background: white;
+  border-bottom: 4px solid black;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -136,9 +129,8 @@ body {
 
 /* ABOUT PROMO */
 
-
-.bacgrko{
-background: linear-gradient(
+.bacgrko {
+  background: linear-gradient(
     107.56deg,
     rgba(67, 181, 73, 0.33) -40%,
     rgba(80, 49, 117, 0.33) 70.96%,
@@ -327,6 +319,91 @@ background: linear-gradient(
 
 /* FOOTER */
 
+.footer-container {
+  border-top: 4px solid black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-left {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: space-evenly;
+  font-family: "Bebas Neue", cursive;
+  color: var(--tertiary);
+}
+
+.footer-left div a,
+.footer-left a {
+  color: var(--tertiary);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.footer-left div a:hover,
+.footer-left a:hover {
+  color: black;
+}
+
+.directions {
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.25em;
+  color: var(--secondary);
+}
+
+.email {
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+.footer-left h5 {
+  color: var(--secondary);
+  font-size: 1.25em;
+}
+
+.footer-right {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-right div {
+  display: flex;
+  color: var(--tertiary);
+  align-items: center;
+}
+
+.footer-right h5 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2em;
+}
+
+.footer-right a {
+  font-size: 2em;
+  text-decoration: none;
+  color: var(--tertiary);
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.footer-right a:hover {
+  color: black;
+}
+
+.footer-center {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 800px) {
@@ -371,6 +448,21 @@ background: linear-gradient(
 
   .about-promo-top {
     width: 100%;
+  }
+
+  body {
+    padding-bottom: 600px;
+  }
+  .footer-container {
+    flex-flow: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 600px;
+  }
+
+  .footer-container div {
+    margin: 0 auto;
   }
 }
 

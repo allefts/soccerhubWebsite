@@ -1,14 +1,10 @@
 import "./App.css";
 import Nav from "./Components/Nav";
-import Header from "./Components/Header";
-import HomePromo from "./Components/HomePromo";
-import AboutPromo from "./Components/AboutPromo";
-import LeaguePromo from "./Components/LeaguePromo";
-import Spacer from "./Components/Spacer";
 import Footer from "./Components/Footer";
+import Training from "./Pages/Training/Training";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import SignUp from "./Components/SignUp";
+import HomePage from "./Components/HomePage";
 
 function App() {
   return (
@@ -17,17 +13,10 @@ function App() {
         <Nav></Nav>
         {/* WHAT IS RENDERD ON HOME PAGE */}
         <Route exact path="/">
-          <div className="home-style">
-            <Header></Header>
-            <HomePromo></HomePromo>
-            <div className="bacgrko">
-
-            <AboutPromo></AboutPromo>
-            <Spacer></Spacer>
-            </div>
-            <LeaguePromo></LeaguePromo>
-            {/* <SignUp></SignUp> */}
-          </div>
+          <HomePage></HomePage>
+        </Route>
+        <Route exact path="/training">
+          <Training />
         </Route>
         <Footer></Footer>
       </Router>
