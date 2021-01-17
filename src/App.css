@@ -10,12 +10,12 @@ html {
 }
 
 body {
-  background: linear-gradient(
+  /* background: linear-gradient(
     107.56deg,
     rgba(67, 181, 73, 0.33) 0%,
     rgba(80, 49, 117, 0.5) 48.96%,
     rgba(210, 29, 35, 0.5) 100%
-  );
+  ); */
   min-height: 100%;
   padding-bottom: 300px;
   position: relative;
@@ -47,6 +47,10 @@ body {
   align-content: center;
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
+}
+
+.logo-container a {
+  margin-left: 100px;
 }
 
 .logo-container {
@@ -145,12 +149,12 @@ body {
   /* background-image: url(./images/backgroundhope.png); */
   background-size: cover;
   /* background: rgba(207, 207, 207, 0.7); */
-  /* background: linear-gradient(
+  background: linear-gradient(
     107.56deg,
     rgba(67, 181, 73, 0.33) 0%,
     rgba(80, 49, 117, 0.5) 48.96%,
     rgba(210, 29, 35, 0.5) 100%
-  ); */
+  );
 }
 
 .left-content {
@@ -408,7 +412,7 @@ body {
 
 @media (max-width: 800px) {
   .logo-picture {
-    height: 50px;
+    display: none;
   }
 
   .nav-catchymotto span {
