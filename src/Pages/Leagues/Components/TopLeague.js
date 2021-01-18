@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import styled from "styled-components";
 import "../Leagues.css";
@@ -152,9 +153,8 @@ const TopLeague = () => {
         <p>This will be a modified format 6 game season.</p>
         <ul>
           <li>
-            All games will be 2 fifteen minute halves with 10 minutes between
-            games to allow players and fans to leave and minimize contact with
-            others
+            All games will be two 15 minute halves with 10 minutes between games
+            to allow players and fans to leave and minimize contact with others.
           </li>
           <li>
             There will be a max roster size of 6 players and up to two parents
@@ -167,14 +167,20 @@ const TopLeague = () => {
           <li>
             The cost is only $290.00 per team or you may opt to be on a house
             team at $45.00 per player (House teams will be coached by a Soccer
-            Hub coach)
+            Hub coach).
           </li>
         </ul>
         <div className="league-rules-buttons">
-          <a href="https://soccerhubaustin.com/wp-content/uploads/2017/05/SoccerHub-Rules-and-Policies-v1.pdf">
+          <a
+            href="https://soccerhubaustin.com/wp-content/uploads/2017/05/SoccerHub-Rules-and-Policies-v1.pdf"
+            target="_blank"
+          >
             <button className="def-btn">Soccerhub Rules and Policies</button>
           </a>
-          <a href="https://thesoccerstation.ezleagues.ezfacility.com/leagues.aspx">
+          <a
+            href="https://thesoccerstation.ezleagues.ezfacility.com/leagues.aspx"
+            target="_blank"
+          >
             <button className="def-btn">League Schedule/Standings</button>
           </a>
         </div>
@@ -188,19 +194,28 @@ const TopLeague = () => {
         <div className="youth-league-registration">
           <h2>Youth League Registrations:</h2>
           <div className="youth-btns">
-            <a href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2877484">
+            <a
+              href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2877484"
+              target="_blank"
+            >
               <button className="def-btn">
                 <i class="fas fa-angle-double-right"></i>
                 U7/U8(2013-2014)Co-Ed
               </button>
             </a>
-            <a href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2808176">
+            <a
+              href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2808176"
+              target="_blank"
+            >
               <button className="def-btn">
                 <i class="fas fa-angle-double-right"></i>
                 U9/U10 (2011-2012) CoEd
               </button>
             </a>
-            <a href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2877485">
+            <a
+              href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2877485"
+              target="_blank"
+            >
               <button className="def-btn">
                 <i class="fas fa-angle-double-right"></i>
                 U11/U12 (2009-2010) CoEd
@@ -211,25 +226,37 @@ const TopLeague = () => {
         <div className="adult-league-registration">
           <h2>Adult League Registrations</h2>
           <div className="adult-btns">
-            <a href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2406848">
+            <a
+              href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2406848"
+              target="_blank"
+            >
               <button className="def-btn">
                 <i class="fas fa-angle-double-right"></i>
                 Men’s Monday O30 League
               </button>
             </a>
-            <a href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2406853">
+            <a
+              href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2406853"
+              target="_blank"
+            >
               <button className="def-btn">
                 <i class="fas fa-angle-double-right"></i>
                 CoEd League
               </button>
             </a>
-            <a href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2406877">
+            <a
+              href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2406877"
+              target="_blank"
+            >
               <button className="def-btn">
                 <i class="fas fa-angle-double-right"></i>
                 Men’s Intermediate A League
               </button>
             </a>
-            <a href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2406880">
+            <a
+              href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2406880"
+              target="_blank"
+            >
               <button className="def-btn">
                 <i class="fas fa-angle-double-right"></i>
                 Men’s Intermediate B League

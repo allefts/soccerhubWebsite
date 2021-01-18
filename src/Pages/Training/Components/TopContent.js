@@ -96,15 +96,30 @@ const TopContent = () => {
           </p>
         </div>
         <div className="session-btns">
-          <button>
-            <i class="fas fa-angle-double-right"></i>4 Sessions
-          </button>
-          <button>
-            <i class="fas fa-angle-double-right"></i>6 Sessions
-          </button>
-          <button>
-            <i class="fas fa-angle-double-right"></i>8 Sessions
-          </button>
+          <a
+            href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=1978667"
+            target="_blank"
+          >
+            <button>
+              <i class="fas fa-angle-double-right"></i>4 Sessions
+            </button>
+          </a>
+          <a
+            href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=2036414"
+            target="_blank"
+          >
+            <button>
+              <i class="fas fa-angle-double-right"></i>6 Sessions
+            </button>
+          </a>
+          <a
+            href="https://tms.ezfacility.com/OnlineRegistrations/Register.aspx?CompanyID=5703&GroupID=1978693"
+            target="_blank"
+          >
+            <button>
+              <i class="fas fa-angle-double-right"></i>8 Sessions
+            </button>
+          </a>
         </div>
         <Table></Table>
       </StyledTopContent>
