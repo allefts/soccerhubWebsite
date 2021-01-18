@@ -10,6 +10,8 @@ font-family: 'PT Serif', serif;
 
 COLORS:
 
+#D8D8D8 //BACKGROUND
+
 #000; //BLACK
 #fff; //WHITE 
 #225e25; //GREEN

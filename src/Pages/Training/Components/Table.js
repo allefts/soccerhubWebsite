@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledTable = styled.div`
-  margin: 0 auto;
+
+  overflow-x: auto;
+  margin: 40px auto 0 auto;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   table{
       width: 100%;

@@ -11,7 +11,7 @@ const StyledSpacer = styled.div`
   // background: rgba(207, 207, 207, 0.7);
 
   // background: #cfcfcf;
-  padding-bottom: 1rem;
+  padding: 100px 0;
   img {
     transform: rotate(90deg);
   }

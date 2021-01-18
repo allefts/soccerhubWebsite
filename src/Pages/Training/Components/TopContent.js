@@ -59,6 +59,13 @@ const StyledTopContent = styled.div`
   .session-btns button:hover {
     background: #503175;
   }
+
+  @media (max-width: 800px) {
+    .session-btns {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
 `;
 
 const TopContent = () => {
@@ -102,16 +109,37 @@ const TopContent = () => {
         <Table></Table>
       </StyledTopContent>
       <StyledGridLessons>{gridMap}</StyledGridLessons>
+      <StyledRefundPolicy className="refund-policy">
+        <h2>Soccerhub Refund Policy</h2>
+        <p>
+          All training packages must be used within 90 days. Because limited
+          openings are available, once a session, private training or camp has
+          been purchased we are unable to offer refunds. Should a situation
+          arise where you need to make changes to a players schedule, please
+          contact Soccer Hub management and we will discuss placement options
+          with you.
+        </p>
+      </StyledRefundPolicy>
     </div>
   );
 };
 
-// const differentGridClasses = [
-//   "top-left",
-//   "top-right",
-//   "bottom-left",
-//   "bottom-right",
-// ];
+const StyledRefundPolicy = styled.div`
+  display: block;
+  text-align: center;
+
+  h2 {
+    padding: 10px 20px;
+    font-family: "Oswald", sans-serif;
+  }
+
+  p {
+    font-size: 18px;
+    padding: 1.5rem 10rem;
+    font-family: "Open Sans", serif;
+  }
+`;
+
 const gridClass = "grid-background";
 const overlayClass = "overlay";
 
@@ -171,7 +199,11 @@ const StyledGridLessons = styled.div`
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
-  margin: 50px auto;
+  margin: 30px auto;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const StyledInsideGridLessons = styled.div`
