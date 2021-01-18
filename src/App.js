@@ -6,6 +6,8 @@ import Leagues from "./Pages/Leagues/Leagues";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import HomePage from "./Components/HomePage";
+import Soccerpups from "./Pages/SoccerPups/Soccerpups";
+import Camps from "./Pages/Camps/Camps";
 
 function App() {
   return (
@@ -21,6 +23,12 @@ function App() {
         </Route>
         <Route exact path="/leagues">
           <Leagues />
+        </Route>
+        <Route exact path="/soccer-pups">
+          <Soccerpups />
+        </Route>
+        <Route exact path="/camps">
+          <Camps />
         </Route>
         <Footer></Footer>
       </Router>
