@@ -36,6 +36,7 @@ const StyledTopContent = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    text-align: center;
   }
 
   .session-btns button {
@@ -122,10 +123,10 @@ const TopContent = () => {
             </button>
           </a>
         </div>
-        <Table></Table>
       </StyledTopContent>
       <StyledGridLessons>{gridMap}</StyledGridLessons>
       <StyledRefundPolicy className="refund-policy">
+        <Table></Table>
         <h2>Soccerhub Refund Policy</h2>
         <p>
           All training packages must be used within 90 days. Because limited

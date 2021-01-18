@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import HomePage from "./Components/HomePage";
 import Soccerpups from "./Pages/SoccerPups/Soccerpups";
 import Camps from "./Pages/Camps/Camps";
+import Rentals from "./Pages/Rentals/Rentals";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         </Route>
         <Route exact path="/camps">
           <Camps />
+        </Route>
+        <Route exact path="/rentals">
+          <Rentals />
         </Route>
         <Footer></Footer>
       </Router>
