@@ -27,12 +27,12 @@ const ClickedNav = ({ open, setOpen }) => {
         <Link className="hamburger-links" to="/rentals">
           Rentals
         </Link>
-        <Link className="hamburger-links" to="/membership">
+        {/* <Link className="hamburger-links" to="/membership">
           Membership
-        </Link>
-        <Link className="hamburger-links" to="/partners">
+        </Link> */}
+        {/* <Link className="hamburger-links" to="/partners">
           Partners
-        </Link>
+        </Link> */}
         <Link className="hamburger-links" to="/contact">
           Contact us!
         </Link>
