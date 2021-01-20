@@ -4,11 +4,12 @@ import Footer from "./Components/Footer";
 import Training from "./Pages/Training/Training";
 import Leagues from "./Pages/Leagues/Leagues";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import HomePage from "./Components/HomePage";
 import Soccerpups from "./Pages/SoccerPups/Soccerpups";
 import Camps from "./Pages/Camps/Camps";
 import Rentals from "./Pages/Rentals/Rentals";
+import Contact from "./Pages/Contact/Contact";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
         </Route>
         <Route exact path="/rentals">
           <Rentals />
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
         </Route>
         <Footer></Footer>
       </Router>

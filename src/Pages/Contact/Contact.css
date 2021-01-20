@@ -1,0 +1,122 @@
+.header-container {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.header-container h1 {
+  font-size: 64px;
+  color: red;
+}
+
+.header-container p,
+.header-container a {
+  margin-top: 20px;
+  text-decoration: underline;
+  color: inherit;
+  font-size: 20px;
+}
+
+.hours-service {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hours-service h3 {
+  font-size: 1.75em;
+}
+
+.hours-service ul li {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.hours-service ul li span {
+  color: red;
+}
+
+.form-header {
+  font-family: "Oswald", sans-serif;
+  padding: 2rem;
+  text-align: center;
+  color: red;
+}
+
+form input,
+form textarea {
+  background: #d8d8d8;
+  border: none;
+  outline: none;
+  padding: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 2px solid red;
+}
+
+.form-names,
+.form-email-phone {
+  display: flex;
+  flex-direction: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-names input,
+.form-email-phone input {
+  font-family: "Open Sans", sans-serif;
+  margin: 30px 0;
+  width: 30%;
+}
+
+form textarea {
+  font-family: "Open Sans", sans-serif;
+}
+
+.form-comments {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.submit-btn {
+  text-align: center;
+}
+
+.submit-btn button {
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 40px;
+  margin: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background: rgba(210, 29, 35, 1);
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.submit-btn button:hover {
+  background: #503175;
+}
+
+@media (max-width: 1000px) {
+  .form-names,
+  .form-email-phone,
+  .form-comments {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-names input,
+  .form-email-phone input {
+    font-family: "Open Sans", sans-serif;
+    margin: 30px 0;
+    width: 80%;
+  }
+}
