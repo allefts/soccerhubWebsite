@@ -4,7 +4,7 @@ import SoccerhubPromo from "../videos/SoccerHubPromo-Small.mp4";
 const Header = () => {
   return (
     <div className="header-wrapper">
-      <div className="header-container">
+      <div className="header-container" style={{ margin: 0 }}>
         <video
           src={SoccerhubPromo}
           className="promo-video"
